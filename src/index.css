@@ -1,0 +1,30 @@
+
+
+.perent{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    border: 2px solid black;
+    width: 250px;
+    height: 250px;
+    /* align-content: center;
+    text-align: center; */
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 2%;
+
+}
+
+.name{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
