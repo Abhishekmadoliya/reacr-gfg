@@ -1,4 +1,5 @@
-import Todo from "./Todo";
+import Comp1 from "./Comp1";
+// import Todo from "./Todo";
 
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   
   return (
       <>
+      <Comp1/>
       {/* <Api/> */}
       {/* <Todo/> */}
       </>
