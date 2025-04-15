@@ -1,5 +1,8 @@
-import Comp1 from "./Comp1";
-// import Todo from "./Todo";
+// import Comp1 from "./Comp1";
+// import Otp from "./Otp";
+import Todo2 from "./Todo2";
+import './index.css'
+
 
 
 function App() {
@@ -7,8 +10,13 @@ function App() {
   
   return (
       <>
-      <Comp1/>
+
+      {/* <Otp/> */}
+      {/* <Comp1/> */}
       {/* <Api/> */}
+      <Todo2/>
+
+      
       {/* <Todo/> */}
       </>
   );
