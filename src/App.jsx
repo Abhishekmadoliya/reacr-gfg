@@ -1,6 +1,8 @@
 // import Comp1 from "./Comp1";
 // import Otp from "./Otp";
+// import Todo from "./Todo";
 import Todo2 from "./Todo2";
+
 import './index.css'
 
 
@@ -15,6 +17,7 @@ function App() {
       {/* <Comp1/> */}
       {/* <Api/> */}
       <Todo2/>
+      
 
       
       {/* <Todo/> */}

@@ -5,7 +5,20 @@ const Todo2 = () => {
 
   const [title,setTitle] = useState('');
   const [desc,setDesc] = useState('');
+  const [edittask, setEdittask] = useState()
+
   const [todo, setTodo] = useState([])
+
+  const handleDelete =(indextoDelete)=>{
+    const updated = todo.filter((_,index)=> index !== indextoDelete);
+    setTodo(updated)
+  }
+
+  const handleEdit = (indextoEdit)=>{
+    setTitle(todo[indextoEdit].title)
+    setDesc(todo[indextoEdit].desc)
+    setEdittask(indextoEdit)
+  }
 
   const ontodoChange = ()=>{
     const obj = {
@@ -16,8 +29,8 @@ const Todo2 = () => {
 
     setTodo(todo=> [...todo, obj])
 
-    setDesc(" ");
-    setTitle(" ");
+    setDesc("");
+    setTitle("");
     
   }
 
@@ -41,8 +54,8 @@ const Todo2 = () => {
           <div key={index}>
             <h1 >{todo.title}</h1>
             <p >{todo.desc}</p>
-            <button>delete</button>
-            <button>edit</button>
+            <button onClick={()=>handleDelete(index)}>delete</button>
+            <button onClick={()=>handleEdit(index)}>edit</button>
 
           </div>
             
